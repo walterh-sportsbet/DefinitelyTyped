@@ -1,7 +1,7 @@
 {
     "files": [
         "index.d.ts",
-        "inspector.d.ts",
+        "../inspector.d.ts",
         "node-tests.ts"
     ],
     "compilerOptions": {

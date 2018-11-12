@@ -1,16 +1,17 @@
-// Type definitions for Node.js
-
 // NOTE: These definitions support NodeJS 10 and TypeScript 3.1 and later.
 
-// compat for TypeScript 1.8 and default es5 target
-// if you use with --target es3 or --target es5 and use below definitions,
-// use the lib.es6.d.ts that is bundled with TypeScript 1.8.
+// NOTE: Until such time as common definitions can be refactored into other
+//       files, please ensure that any relevant changes made in this file
+//       are also made in '../index.d.ts' as well.
+
+// compatibility for default es5 target
 /// <reference lib="es2018" />
 /// <reference lib="esnext.asyncIterable" />
 /// <reference lib="esnext.intl" />
 
 /** inspector module types */
-/// <reference path="./inspector.d.ts" />
+// tslint:disable-next-line:no-bad-reference
+/// <reference path="../inspector.d.ts" />
 
 // This needs to be global to avoid TS2403 in case lib.dom.d.ts is present in the same build
 interface Console {
